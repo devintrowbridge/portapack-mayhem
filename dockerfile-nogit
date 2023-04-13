@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:latest
 
 # Set location to download ARM toolkit from.
 # This will need to be changed over time or replaced with a static link to the latest release.
@@ -15,7 +15,7 @@ RUN apt-get update && \
 	apt-get -qy autoremove
 
 #Install current pip from PyPa
-RUN curl https://bootstrap.pypa.io/pip/3.4/get-pip.py -o get-pip.py && \
+RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
 	python3 get-pip.py
 
 #Fetch additional dependencies from Python 3.x pip
