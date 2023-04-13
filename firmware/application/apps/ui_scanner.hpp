@@ -110,7 +110,7 @@ public:
 		.foreground = Color::red(),
 	};
 
-	std::string title() const override { return "Scanner"; };
+	std::string title() const override { return "DEVIN"; };
 	std::vector<rf::Frequency> frequency_list{ };
 	std::vector<string> description_list { };
 

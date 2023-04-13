@@ -69,6 +69,7 @@
 #include "ui_playlist.hpp"
 #include "ui_view_wav.hpp"
 #include "ui_whipcalc.hpp"
+#include "ui_devinapp.hpp"
 
 //#include "acars_app.hpp"
 #include "ais_app.hpp"
@@ -521,7 +522,8 @@ TransmittersMenuView::TransmittersMenuView(NavigationView& nav) {
 		{ "SSTV", 			ui::Color::green(), 	&bitmap_icon_sstv,		[&nav](){ nav.push<SSTVTXView>(); } },
 		{ "TEDI/LCR",		ui::Color::yellow(), 	&bitmap_icon_lcr,		[&nav](){ nav.push<LCRView>(); } },
 		{ "TouchTune",		ui::Color::yellow(),	&bitmap_icon_remote,	[&nav](){ nav.push<TouchTunesView>(); } },
-                { "Playlist",           ui::Color::yellow(),    &bitmap_icon_remote,    [&nav](){ nav.push<PlaylistView>(); } },
+		{ "Playlist",       ui::Color::yellow(),    &bitmap_icon_remote,    [&nav](){ nav.push<PlaylistView>(); } },
+		{ "Devin App",      ui::Color::green(),     &bitmap_icon_remote,    [&nav](){ nav.push<DevinAppView>(); } },
 
 		//{ "Remote",			ui::Color::dark_grey(),	&bitmap_icon_remote,	[&nav](){ nav.push<RemoteView>(); } },
 	});

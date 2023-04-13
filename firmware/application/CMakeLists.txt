@@ -273,7 +273,7 @@ set(CPPSRC
 	apps/ui_recon.cpp  
 	apps/ui_recon_settings.cpp
 	apps/tpms_app.cpp
-	apps/tpms_app.cpp
+	apps/ui_devinapp.cpp
 	protocols/aprs.cpp
 	protocols/ax25.cpp
 	protocols/bht.cpp
